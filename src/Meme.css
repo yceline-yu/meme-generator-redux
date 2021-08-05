@@ -1,0 +1,29 @@
+.Meme {
+    display:inline-block;
+    position: relative;
+    border: black solid 2px;
+    margin: 1%;
+}
+
+.Meme-top {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font: small-caps bold sans-serif;
+    -webkit-text-stroke: 1px black;
+    overflow: hidden;
+}
+
+.Meme-bot {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font: small-caps bold sans-serif;
+    -webkit-text-stroke: 1px black;
+    overflow: hidden;
+}
