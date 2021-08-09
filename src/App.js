@@ -5,6 +5,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 
+/** App
+ * 
+ * Props:
+ * -none
+ * 
+ * State:
+ * - none
+ * 
+ * App -> { MemeForm, MemeList }
+ */
 function App() {
 
   const memeList = useSelector(store => store.memes);
@@ -24,8 +34,10 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Create a New Meme</h1>
       <MemeForm handleSave={submit}/>
       <hr/>
+      <h1>Gallery</h1>
       <MemeList memes={memeList} remove={remove}/>
     </div>
   );

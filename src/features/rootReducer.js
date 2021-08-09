@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+// import { createSlice } from '@reduxjs/toolkit'
 
 const INITIAL_STATE = { memes: []}
 
@@ -15,21 +15,21 @@ function rootReducer(state = INITIAL_STATE, action) {
   }
 }
 
-const createReducer = createSlice({
-  name:"memes",
-  initialState: {
-    value:[]
-  },
-  reducers: {
-    add: (state, action) => {
-      state.value.push(action.payload);
-    },
-    delete: (state, action) => {
-      state.value.filter(val => val.id !== action.payload.id);
-    }
-  }
-});
+// const createReducer = createSlice({
+//   name:"memes",
+//   initialState: {
+//     value:[]
+//   },
+//   reducers: {
+//     add: (state, action) => {
+//       state.value.push(action.payload);
+//     },
+//     delete: (state, action) => {
+//       state.value.filter(val => val.id !== action.payload.id);
+//     }
+//   }
+// });
 
 export default rootReducer;
 
-export { createReducer }
+// export { createReducer }

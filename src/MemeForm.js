@@ -1,5 +1,16 @@
 import { useState } from "react";
+import "./MemeForm.css";
 
+/** MemeForm
+ * 
+ * Props:
+ * - handleSave();
+ * 
+ * State:
+ * - formData
+ * 
+ * App -> MemeForm
+ */
 function MemeForm({ handleSave }) {
   const initialState = {topText:"", botText: "", imgUrl: ""}
   const [formData, setFormData] = useState(initialState);
@@ -55,7 +66,7 @@ function MemeForm({ handleSave }) {
         />
       </div>
 
-      <button className="btn-primary rig btn btn-sm">
+      <button className="MemeForm-button">
           Add
           </button>
     </form >

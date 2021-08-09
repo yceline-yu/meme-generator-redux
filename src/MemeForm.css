@@ -1,0 +1,22 @@
+.MemeForm {
+    margin: 1%;
+}
+
+.form-group {
+    margin: 1em;
+}
+
+input {
+    width: 50%;
+    padding: 1em;
+}
+
+.MemeForm-button {
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 25%;
+    font-weight: bold;
+    background-color: cadetblue;
+    outline: none;
+    border: none;
+}
